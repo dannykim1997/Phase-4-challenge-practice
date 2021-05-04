@@ -1,0 +1,9 @@
+<h1>Create Post</h1>
+
+<%= form_for @post do |p|%>
+    Blogger: <%= p.collection_select :blogger_id, @bloggers, :id, :name %><br/><br/>
+    Destination: <%= p.collection_select :destination_id, @destinations, :id, :name %><br/><br/>
+    Title: <%= p.text_field :title %> <br/><br/>
+    Content: <%= p.text_area :content %> <br/><br/>
+    <%= p.submit%>
+<%end%>

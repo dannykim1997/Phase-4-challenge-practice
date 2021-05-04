@@ -1,0 +1,8 @@
+<h1>Create Blogger</h1>
+
+<%= form_for @blogger do |b|%>
+    Name: <%= b.text_field :name %> <br/><br/>
+    Age: <%= b.number_field :age %> <br/><br/>
+    Bio: <%= b.text_field :bio %> <br/><br/>
+    <%= b.submit%>
+<%end%>

@@ -1,0 +1,12 @@
+Name: <%= @destination.name %><br/>
+
+Country: <%= @destination.country %><br/>
+
+Recent Posts: 
+<% @most_recent_posts.each do |p| %><br/>
+    <%= p.title%><br/>
+<%end%>
+
+Most Popular Post: <%= link_to @popular_post.title, post_path(@popular_post)%><br/>
+
+Average age of bloggers: <%= @avg_blogger_age %>

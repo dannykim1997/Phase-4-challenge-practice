@@ -1,0 +1,4 @@
+<% @bloggers.each do |blogger|%>
+<h1><%= blogger.name %></h1>
+<%= button_to "Delete User", {action: "destroy", id:blogger.id}, method: :delete %>
+<%end%>
